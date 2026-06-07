@@ -1,12 +1,10 @@
 # builder-growth — AI Growth Skills Pack v1.0.0
 
-> Private — not yet published. Maturing before public release.
-
 Skills and agents that enforce quality in AI-assisted growth work: positioning that survives the "so what?" test, copy that clears the "who cares?" test, funnels diagnosed before they are optimised, experiments designed with stopping rules before they run, retention loops defined before launch, and AI capability claims reviewed for accuracy before they ship.
 
-## Status
+**[→ Visual overview](https://rbraga01.github.io/builder-growth/)**
 
-v1.0.0 — complete and usable. Not yet publicly announced.
+Works standalone or alongside [A Team](https://github.com/RBraga01/a-team), [builder-ai](https://github.com/RBraga01/builder-ai), [builder-design](https://github.com/RBraga01/builder-design), and [builder-product](https://github.com/RBraga01/builder-product).
 
 ## Skills
 
@@ -43,6 +41,18 @@ git clone https://github.com/RBraga01/builder-growth
 cp -rn builder-growth/skills your-project/
 cp -rn builder-growth/.claude your-project/
 ```
+
+## The builder-* Ecosystem
+
+| Pack | Domain | Skills | Agents |
+|---|---|---|---|
+| [A Team](https://github.com/RBraga01/a-team) | Engineering baseline | 18 | 25 |
+| [builder-ai](https://github.com/RBraga01/builder-ai) | LLM engineering | 8 | 5 |
+| [builder-design](https://github.com/RBraga01/builder-design) | AI UI design | 8 | 5 |
+| [builder-product](https://github.com/RBraga01/builder-product) | Product quality | 6 | 3 |
+| **builder-growth** | Growth & messaging | 6 | 3 |
+
+All packs share the same enforcement model: Completion Statement Formats that require real values, not summaries.
 
 ## License
 
