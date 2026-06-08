@@ -81,7 +81,7 @@ One hypothesis per root cause, in the form:
 
 > If we [specific change], then the [step N] exit rate will decrease by [magnitude], because [mechanism connecting change to root cause].
 
-This hypothesis goes directly into `ab-test-design` before any solution is built.
+This hypothesis goes directly into `experiment-design` before any solution is built.
 
 ## Secondary Leaks
 
@@ -143,7 +143,7 @@ Root cause: [specific description — from session recordings + exit survey] ✓
   Methods used: [session recordings / exit survey / heatmap / error logs / segmentation]
 
 Hypothesis: If [specific change], then Step N exit rate decreases by [X%] because [mechanism] ✓
-Next step: ab-test-design ✓
+Next step: experiment-design ✓
 
 Secondary leaks identified: Step <A> and Step <B> — queued after primary hypothesis test ✓
 ```
