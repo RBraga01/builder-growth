@@ -1,0 +1,45 @@
+{
+  "name": "builder-growth",
+  "version": "1.0.0",
+  "description": "AI growth quality enforcement: 6 skills and 3 agents that enforce quality in AI-assisted growth work. Covers experiment design, funnel analysis, retention design, copy quality gates, positioning audit, and AI messaging review.",
+  "author": {
+    "name": "RBraga01",
+    "url": "https://github.com/RBraga01"
+  },
+  "homepage": "https://github.com/RBraga01/builder-growth",
+  "repository": "https://github.com/RBraga01/builder-growth",
+  "license": "MIT",
+  "websiteURL": "https://github.com/RBraga01/builder-growth",
+  "privacyPolicyURL": "https://github.com/RBraga01/builder-growth/blob/main/SECURITY.md",
+  "termsOfServiceURL": "https://github.com/RBraga01/builder-growth/blob/main/LICENSE",
+  "keywords": [
+    "growth",
+    "experiment",
+    "funnel",
+    "retention",
+    "copy",
+    "codex",
+    "builder"
+  ],
+  "interface": {
+    "displayName": "Builder: Growth",
+    "shortDescription": "6 skills and 3 agents for growth teams.",
+    "longDescription": "AI growth quality enforcement: 6 skills and 3 agents that enforce quality in AI-assisted growth work. Covers experiment design, funnel analysis, retention design, copy quality gates, positioning audit, and AI messaging review.",
+    "developerName": "RBraga01",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Run /experiment-design to structure a new growth experiment.",
+      "Use copy-quality-gate to review landing page copy."
+    ],
+    "websiteURL": "https://github.com/RBraga01/builder-growth",
+    "privacyPolicyURL": "https://github.com/RBraga01/builder-growth/blob/main/SECURITY.md",
+    "termsOfServiceURL": "https://github.com/RBraga01/builder-growth/blob/main/LICENSE",
+    "brandColor": "#10b981",
+    "screenshots": []
+  }
+}
