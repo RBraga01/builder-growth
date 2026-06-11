@@ -1,0 +1,21 @@
+{
+  "name": "builder-growth",
+  "description": "AI growth quality enforcement: 6 skills and 3 agents for growth teams",
+  "version": "1.0.0",
+  "author": {
+    "name": "RBraga01",
+    "url": "https://github.com/RBraga01"
+  },
+  "homepage": "https://github.com/RBraga01/builder-growth",
+  "repository": "https://github.com/RBraga01/builder-growth",
+  "license": "MIT",
+  "keywords": [
+    "growth",
+    "experiment",
+    "funnel",
+    "retention",
+    "copy",
+    "claude-code",
+    "builder"
+  ]
+}
