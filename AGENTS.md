@@ -1,14 +1,16 @@
 # builder-growth — Agent Directory
 
-Version: v1.0.0
+Version: v1.1.0
 
-Three agents. Each produces a file. No file, no completion.
+Five agents. Each produces a file. No file, no completion.
 
 | Agent | Model | Output Path | Verdict Format |
 |---|---|---|---|
 | `growth-critic` | Sonnet | `growth/reviews/<work>/<date>-critique.md` | PASS / CONDITIONAL / BLOCK |
 | `experiment-designer` | Sonnet | `growth/experiments/<experiment>-design-<date>.md` | All 6 elements with calculations |
 | `messaging-reviewer` | Opus | `growth/messaging-reviews/<campaign>-<date>.md` | SHIP / CONDITIONAL / HOLD |
+| `growth-strategist` | Sonnet | `growth/strategy/`, `growth/channels/`, `growth/offers/`, `growth/launches/` | READY / CONDITIONAL / BLOCKED |
+| `campaign-reviewer` | Sonnet | `growth/campaigns/`, `growth/metrics/`, `growth/social-proof/`, `growth/pricing/` | PASS / CONDITIONAL / BLOCK |
 
 ## growth-critic
 
@@ -46,3 +48,29 @@ Three agents. Each produces a file. No file, no completion.
 - Soften REMOVE items to REVISE
 - Accept vague AI labels as "industry standard"
 - Deliver the review only in chat
+
+## growth-strategist
+
+**Purpose:** Defines growth strategy, validates channel selection, validates offers, and designs launch plans before execution begins.
+
+**Trigger:** Before any new growth initiative starts execution — campaigns, content, or outbound work with no underlying strategy.
+
+**Does not:**
+- Produce a strategy with more than one growth goal per cycle
+- Select a channel without scoring it against all eight `channel-selection-audit` criteria
+- Validate an offer with no risk reversal or more than one competing CTA
+- Write a launch plan with no rollback or pause criterion
+- Deliver any output only in chat
+
+## campaign-reviewer
+
+**Purpose:** Turns strategy and offers into executable campaign briefs, defines growth metrics, and reviews social proof and pricing pages before they ship.
+
+**Trigger:** Before any campaign launches, before metrics tracking goes live, and before any proof asset or pricing page is published.
+
+**Does not:**
+- Produce a campaign brief with more than one objective or with no scheduled review gates
+- Set a success metric after results are already in
+- PASS unsourced or unpermissioned proof — REMOVE it instead
+- PASS a pricing page with undisclosed limitations or a manipulative anchor tier
+- Deliver any output only in chat
