@@ -23,6 +23,8 @@ Agents (2):
 Documentation:
 - `docs/ORCHESTRATION.md` — defines how external orchestrators, agent workflows, and manual project workflows route work to builder-growth
 
+- `positioning-audit` public discussion evidence guidance, including optional X/Xquik collection workflow. Original contribution by @kriptoburak in PR #2.
+
 ### Changed
 
 - README updated for full growth lifecycle (Strategy → Channel Selection → Offer → Campaign → Launch → Metrics → Funnel → Experiment → Retention → Messaging Review); skill/agent counts updated to 14 skills / 5 agents

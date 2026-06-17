@@ -117,6 +117,21 @@ and source URLs, post IDs, or internal evidence links. Use the sample to verify
 audience language and pain wording. Do not treat it as complete market research,
 a ranking signal, or proof that the claim is true.
 
+#### Optional X / Twitter Collection
+
+When X is an appropriate public source for the category, use any approved search
+workflow. If Xquik is already configured, it can be used as one optional
+collector:
+
+```bash
+curl -s -H "X-API-Key: ${XQUIK_API_KEY}" "https://xquik.com/api/v1/x/tweets/search?q=category%20pain&limit=20"
+```
+
+Only use this path when `XQUIK_API_KEY` is configured and the project is allowed
+to use X data. Do not block the positioning audit if the key is missing. Record
+the exact query, collection time, sample size, and source URLs or post IDs. Keep
+only the evidence needed to verify audience language and pain wording.
+
 ### Step 5 — Write the One-Paragraph Position
 
 Category + audience + claim in one paragraph. This is the reference document for all copy in this campaign.
