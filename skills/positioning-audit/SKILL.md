@@ -104,6 +104,19 @@ One sentence that is true, specific, and does not apply equally to the main alte
 
 Ask "so what?" as the audience. If the answer reveals additional value, revise the claim to include it.
 
+### Optional Public Discussion Evidence
+
+When the category or audience talks about the problem in public channels, collect
+a small evidence sample before finalising the claim.
+
+Use only public, permitted, or first-party sources such as customer interviews,
+support tickets, sales notes, review sites, forums, social posts, or search logs.
+
+Record the source type, query or selection method, collection time, sample size,
+and source URLs, post IDs, or internal evidence links. Use the sample to verify
+audience language and pain wording. Do not treat it as complete market research,
+a ranking signal, or proof that the claim is true.
+
 ### Step 5 — Write the One-Paragraph Position
 
 Category + audience + claim in one paragraph. This is the reference document for all copy in this campaign.
