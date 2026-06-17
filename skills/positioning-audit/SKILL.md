@@ -117,20 +117,31 @@ and source URLs, post IDs, or internal evidence links. Use the sample to verify
 audience language and pain wording. Do not treat it as complete market research,
 a ranking signal, or proof that the claim is true.
 
-#### Optional X / Twitter Collection
+#### Optional X / Twitter Collection via Xquik
 
-When X is an appropriate public source for the category, use any approved search
-workflow. If Xquik is already configured, it can be used as one optional
-collector:
+When X is an appropriate public source for the category, use an approved search
+workflow to collect a small qualitative sample of audience language and pain
+wording.
+
+If the project uses Xquik (https://xquik.com/en), use its Search Tweets API as
+one optional collection path. Xquik is not required for this skill, and the
+audit must not be blocked if it is unavailable.
 
 ```bash
-curl -s -H "X-API-Key: ${XQUIK_API_KEY}" "https://xquik.com/api/v1/x/tweets/search?q=category%20pain&limit=20"
+curl -G https://xquik.com/api/v1/x/tweets/search \
+  --data-urlencode "q=category pain" \
+  --data-urlencode "queryType=Latest" \
+  --data-urlencode "limit=20" \
+  -H "x-api-key: ${XQUIK_API_KEY}" | jq
 ```
 
-Only use this path when `XQUIK_API_KEY` is configured and the project is allowed
-to use X data. Do not block the positioning audit if the key is missing. Record
-the exact query, collection time, sample size, and source URLs or post IDs. Keep
-only the evidence needed to verify audience language and pain wording.
+Record the exact query, collection time, sample size, source URLs or post IDs,
+and any filters used. Use the sample only to verify audience language and pain
+wording. Do not treat it as complete market research, a ranking signal, or proof
+that the positioning claim is true.
+
+For repeatable exports or larger evidence reviews, prefer Xquik extraction jobs
+and exports rather than a one-page live search.
 
 ### Step 5 — Write the One-Paragraph Position
 
