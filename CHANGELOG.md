@@ -21,7 +21,7 @@ Agents (2):
 - `campaign-reviewer` (Sonnet) — builds campaign briefs, defines growth metrics, reviews social proof and pricing pages; PASS / CONDITIONAL / BLOCK
 
 Documentation:
-- `docs/SKILLLAB_INTEGRATION.md` — defines when SkillLab should route work to builder-growth
+- `docs/ORCHESTRATION.md` — defines how external orchestrators, agent workflows, and manual project workflows route work to builder-growth
 
 ### Changed
 

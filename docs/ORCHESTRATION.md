@@ -1,16 +1,33 @@
-# SkillLab Integration
+# Orchestration
 
 ## Purpose
 
-Define when SkillLab should route work to builder-growth.
+Define how builder-growth can be invoked by an external orchestrator, an agent
+workflow, or a person running a manual project workflow. builder-growth is
+autonomous: it has no dependency on any specific upstream planning system and
+exposes the same capabilities regardless of who calls it.
+
+## Who Can Use builder-growth
+
+builder-growth is consumable by:
+
+- **Claude Code** — invoke skills and agents directly from a session;
+- **Codex** — call the same skills/agents from a Codex-driven workflow;
+- **External orchestrators** — any upstream planning system that routes growth
+  work to this pack;
+- **Agent workflows** — multi-agent pipelines that delegate growth tasks;
+- **Manual project workflows** — a person following the pack's skills by hand.
 
 ## Role
 
-builder-growth owns reusable growth capabilities for strategy, channel selection, offer validation, campaign planning, launch planning, metrics, funnel diagnosis, experiments, retention, pricing review, social proof review, copy quality, and AI messaging review.
+builder-growth owns reusable growth capabilities for strategy, channel
+selection, offer validation, campaign planning, launch planning, metrics,
+funnel diagnosis, experiments, retention, pricing review, social proof review,
+copy quality, and AI messaging review.
 
-## When SkillLab Should Call builder-growth
+## When To Call builder-growth
 
-Call builder-growth when a project needs:
+Route work here when a project needs:
 
 - growth strategy;
 - channel selection;
@@ -26,7 +43,9 @@ Call builder-growth when a project needs:
 - external copy review;
 - AI messaging claims review.
 
-## Required Inputs From SkillLab
+## Required Inputs
+
+The calling workflow must supply:
 
 - project brief;
 - target user or segment;
@@ -71,7 +90,7 @@ builder-growth may block launch when:
 - pricing page creates confusion or unmanaged risk;
 - social proof is unsourced or misleading.
 
-## Handoff Back To SkillLab
+## Handoff Back To The Caller
 
 Every builder-growth output must include:
 
